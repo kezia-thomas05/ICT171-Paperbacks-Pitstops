@@ -1,57 +1,125 @@
+<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="personalisation.css">
-    <title>ICT171 Blog</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PAPERBACKS & PITSTOPS | Personal Blog</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body style="font-family: Arial; margin: 40px;">
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">PAPERBACKS & PITSTOPS</h1>
 
-    <h1>PAPERBACKS & PIT STOPS</h1>
+      <ul class="nav-links">
+        <li><a href="#music">Songs</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#poetry">Poetry</a></li>
+        <li><a href="#f1">Formula 1</a></li>
+      </ul>
+    </nav>
 
-    <p><strong>My StudentID:</strong> 35117059</p>
+    <div class="hero">
+      <h2>Welcome to My Corner of the Internet</h2>
+      <p>
+        A space filled with music, books, poetry and Formula 1.
+      </p>
 
-    <h2>Project Proposal</h2>
-    <p>This project is a cloud-based personal blog that I created to share a few of the things I am passionate about, namely music, books, poems and of course Formula 1. The aim of this blog is to offer an organized and user-friendly platform where different kinds of content can be arranged into separate sections, allowing users to explore topics based on their interests. Infrastructure as a Service (IaaS), specifically Microsoft Azure, is used to host the website on a virtual machine. Nginx serves as a web server to deliver the content, and the server is configured using commands and runs a Linux-based operating system. To be able to ensure simplicity and reliability while meeting the assignment's requirements, the blog is created as a static website using simple HTML. To improve user experience, the blog may later be extended to include more pages, better layout, and interactive features.
-The main goal of this project is to demonstrate a practical understanding of cloud server layouts and environments. This project shows how modern web applications are hosted and managed by setting up a website on a remote virtual machine. The process involves building and configuring the virtual machine, establishing network connectivity, installing and maintaining a web server, and using the command line to edit content directly on the server. The project combines technical skills with a creative element by allowing the author to express personal interests and facts.
-The website focuses mainly on topics including Formula 1 analysis, book recommendations, poetry and quotes, and music recommendations. Each section offers selected information, enabling guests to explore various topics according to their interests while maintaining a unified theme that combines lifestyle and creative content. I have included here a brief outlook on how the website might look below which can be subjected to further modifications.
-    </p>
+      <button id="themeBtn">Toggle Theme</button>
+    </div>
+  </header>
 
-    <h2>Song Recommendations</h2>
-    <ul>
-        <li>The Prodigal - Josiah Queen</li>
-        <li>Sweet Creature - Harry Styles</li>
-        <li>500 Miles - Joan Baez</li>
-    </ul>
+  <!-- Music Section -->
+  <section id="music" class="section">
+    <h2>🎵 Song Recommendations</h2>
 
-    <h2>Book Recommendations</h2>
-    <ul>
-        <li>Confessions - Kanae Minato</li>
-        <li>The love hypothesis - Ali Hazelwood</li>
-        <li>The Naturals (pentology) - Jennifer Lynn Barnes</li>
-    </ul>
+    <div class="card-container">
+      <div class="card">
+        <h3>The Prodigal</h3>
+        <p>Josiah Queen</p>
+      </div>
 
-    <h2>Quotes & Poetry</h2>
-    <p>"Paper is my heart, pens are my veins. They return the words I stole, blood to paint a scene."
+      <div class="card">
+        <h3>Sweet Creature</h3>
+        <p>Harry Styles</p>
+      </div>
 
-    <h2>Formula 1 Section</h2>
-    <p>
-        This section includes my all time favourite radio messages during Formula 1 races, hilarious memes, driver & team standings and race analysis.
-    </p>
+      <div class="card">
+        <h3>500 Miles</h3>
+        <p>Joan Baez</p>
+      </div>
+    </div>
+  </section>
 
-    <hr>
-    <h2>License Rationale</h2>
+  <!-- Books Section -->
+  <section id="books" class="section dark-section">
+    <h2>📚 Book Recommendations</h2>
 
-    <p>
-    The MIT License was selected for this project because it is a standard, well-known, and an open-source license that permits others to use, modify, and share the project with a few restrictions. Since it promotes learning, collaboration, and code reuse while still giving due credit to the original creator, it is appropriate for an academic cloud-based website. Because of its adaptability, it is perfect for a student project that can be expanded, improved, or modified in future assignments. Additionally, the MIT License guarantees that the author is always credited while allowing others to expand or improve the work later on.
-    </p>
+    <div class="card-container">
+      <div class="card">
+        <h3>Confessions</h3>
+        <p>Kanae Minato</p>
+      </div>
 
-    <hr>
+      <div class="card">
+        <h3>The Love Hypothesis</h3>
+        <p>Ali Hazelwood</p>
+      </div>
 
-    <footer>
-    <p>&copy 2026 35117059</p>
-    <p>Licensed under the MIT License</p>
-    </footer>
+      <div class="card">
+        <h3>The Naturals</h3>
+        <p>Jennifer Lynn Barnes</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Poetry Section -->
+  <section id="poetry" class="section">
+    <h2>🖋 Quotes & Poetry</h2>
+
+    <div class="quote-box">
+      <p>
+        “Paper is my heart, pens are my veins.
+        They return the words I stole,
+        blood to paint a scene.”
+      </p>
+    </div>
+  </section>
+
+  <!-- Formula 1 Section -->
+  <section id="f1" class="section dark-section">
+    <h2>🏎 Formula 1</h2>
+
+    <div class="f1-content">
+      <div class="card">
+        <h3>Favourite Radio Messages</h3>
+        <ul>
+          <li>"Simply Lovely!"</li>
+          <li>"We are checking."</li>
+          <li>"Stop inventing."</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>What You'll Find</h3>
+        <ul>
+          <li>Race analysis</li>
+          <li>Driver standings</li>
+          <li>F1 memes</li>
+          <li>Team updates</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 ROOTED Blog | Built on Microsoft Azure</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
