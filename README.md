@@ -1,4 +1,4 @@
-ICT171 Cloud Server Project — Paperbacks & Pitstops
+**ICT171 Cloud Server Project — Paperbacks & Pitstops**
 
 Student Details:
 Name: Kezia Mariam Thomas
