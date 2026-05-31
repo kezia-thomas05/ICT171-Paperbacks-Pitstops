@@ -105,6 +105,25 @@ SSL certificate is automatically managed and renewed by Certbot.
 ## Verification:
 nslookup paperbacks-and-pitstops.com
 
+# Server Functionality & Integration
+
+This cloud server operates as a multi-purpose system combining several integrated services:
+
+### 1. Web Hosting Service
+Nginx serves a fully responsive personal blog website accessible via a custom domain with HTTPS encryption.
+
+### 2. System Monitoring Service
+A custom Bash script ('system-status.sh') provides real-time server health information including CPU usage, memory usage, disk usage, and service status.
+
+### 3. Deployment Workflow
+The website is maintained through a GitHub repository, with updates manually deployed to the server, ensuring version-controlled development.
+
+### 4. Security Layer
+SSL/TLS encryption is implemented using Let’s Encrypt Certbot, ensuring secure HTTPS communication.
+
+### Integration
+All components operate on a single Azure Virtual Machine, demonstrating how cloud infrastructure can support multiple coordinated services within one environment.
+
 # GitHub Repository:
 
 - https://github.com/kezia-thomas05/ICT171-Paperbacks-Pitstops
