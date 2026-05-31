@@ -1,154 +1,88 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PAPERBACKS & PITSTOPS | Personal Blog</title>
+  <title>Paperbacks & Pitstops | Dashboard Blog</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">PAPERBACKS & PITSTOPS</h1>
+<!-- TOP BAR -->
+<header class="topbar">
+  <h1>📊 Paperbacks & Pitstops Dashboard</h1>
+  <button id="themeBtn">Toggle Theme</button>
+</header>
 
-      <ul class="nav-links">
-        <li><a href="#music">Songs</a></li>
-        <li><a href="#books">Books</a></li>
-        <li><a href="#poetry">Poetry</a></li>
-        <li><a href="#f1">Formula 1</a></li>
-      </ul>
-    </nav>
+<!-- DASHBOARD HOME -->
+<section class="dashboard">
 
-    <div class="hero">
-      <h2>Welcome to Paperbacks & Pitstops</h2>
+  <a href="#music" class="dash-card">
+    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d" />
+    <h3>🎵 Music</h3>
+  </a>
 
-      <p>
-        Hi, I'm Kezia. This website was developed as part of my ICT171 Cloud
-        Server Project and serves as my personal space to share my interests in
-        books, music, poetry and Formula 1.
-      </p>
+  <a href="#books" class="dash-card">
+    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" />
+    <h3>📚 Books</h3>
+  </a>
 
-      <p>
-        The website is hosted on Microsoft Azure, secured using HTTPS through
-        Let's Encrypt and managed through GitHub version control.
-      </p>
+  <a href="#poetry" class="dash-card">
+    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a" />
+    <h3>🖋 Poetry</h3>
+  </a>
 
-      <button id="themeBtn">Toggle Theme</button>
-    </div>
-  </header>
+  <a href="#f1" class="dash-card">
+    <img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf" />
+    <h3>🏎 Formula 1</h3>
+  </a>
 
+  <a href="#server" class="dash-card">
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31" />
+    <h3>🖥 Server Status</h3>
+  </a>
 
-<section class="section">
-  <h2>☁️ About This Project</h2>
+</section>
 
-  <div class="quote-box">
-    <p>
-      Paperbacks & Pitstops is a cloud-hosted personal blog developed for
-      ICT171 Introduction to Server Environments and Architectures.
-      The website is hosted on a Microsoft Azure virtual machine,
-      connected to a custom domain name and secured using SSL/TLS
-      certificates from Let's Encrypt.
-    </p>
+<!-- MUSIC -->
+<section id="music" class="section">
+  <h2>🎵 Music</h2>
+  <p>Song recommendations curated by me.</p>
+</section>
+
+<!-- BOOKS -->
+<section id="books" class="section dark">
+  <h2>📚 Books</h2>
+  <p>Books I love reading.</p>
+</section>
+
+<!-- POETRY -->
+<section id="poetry" class="section">
+  <h2>🖋 Poetry</h2>
+  <p>Quotes and original writing.</p>
+</section>
+
+<!-- F1 -->
+<section id="f1" class="section dark">
+  <h2>🏎 Formula 1</h2>
+  <p>Race highlights, memes, and driver updates.</p>
+</section>
+
+<!-- SERVER -->
+<section id="server" class="section">
+  <h2>🖥 Live Server Dashboard</h2>
+
+  <div class="server-box">
+    <pre id="statusBox">Loading server data...</pre>
+    <button onclick="refreshStatus()">Refresh</button>
   </div>
 </section>
 
+<footer>
+  <p>© 2026 Paperbacks & Pitstops | Azure Hosted | ICT171 Project</p>
+</footer>
 
-  <!-- Music Section -->
-  <section id="music" class="section">
-    <h2>🎵 Song Recommendations</h2>
-
-    <div class="card-container">
-      <div class="card">
-        <h3>The Prodigal</h3>
-        <p>Josiah Queen</p>
-      </div>
-
-      <div class="card">
-        <h3>Sweet Creature</h3>
-        <p>Harry Styles</p>
-      </div>
-
-      <div class="card">
-        <h3>500 Miles</h3>
-        <p>Joan Baez</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Books Section -->
-  <section id="books" class="section dark-section">
-    <h2>📚 Book Recommendations</h2>
-
-    <div class="card-container">
-      <div class="card">
-        <h3>Confessions</h3>
-        <p>Kanae Minato</p>
-      </div>
-
-      <div class="card">
-        <h3>The Love Hypothesis</h3>
-        <p>Ali Hazelwood</p>
-      </div>
-
-      <div class="card">
-        <h3>The Naturals</h3>
-        <p>Jennifer Lynn Barnes</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Poetry Section -->
-  <section id="poetry" class="section">
-    <h2>🖋 Quotes & Poetry</h2>
-
-    <div class="quote-box">
-      <p>
-        “Paper is my heart, pens are my veins.
-        They return the words I stole,
-        blood to paint a scene.”
-      </p>
-    </div>
-  </section>
-
-  <!-- Formula 1 Section -->
-  <section id="f1" class="section dark-section">
-    <h2>🏎 Formula 1</h2>
-
-    <div class="f1-content">
-      <div class="card">
-        <h3>Favourite Radio Messages</h3>
-        <ul>
-          <li>"Simply Lovely!"</li>
-          <li>"We are checking."</li>
-          <li>"Stop inventing."</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>What You'll Find</h3>
-        <ul>
-          <li>Race analysis</li>
-          <li>Driver standings</li>
-          <li>F1 memes</li>
-          <li>Team updates</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>
-      © 2026 Paperbacks & Pitstops |
-      Hosted on Microsoft Azure |
-      Secured with HTTPS |
-      ICT171 Cloud Server Project
-    </p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
