@@ -45,7 +45,7 @@ sudo ufw allow 'Nginx Full'
 sudo ufw enable
 4. Deploy website files
 cd /var/www/html
-sudo git clone https://github.com/YOUR_GITHUB_REPO.git
+sudo git clone https://github.com/kezia-thomas05/ICT171-Paperbacks-Pitstops.git
 
 OR manually copy:
 
