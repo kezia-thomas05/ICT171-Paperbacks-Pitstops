@@ -5,7 +5,7 @@ Student Number: 35117059
 Unit: ICT171 – Introduction to Server Environments and Architectures
 Project: Cloud-hosted web server using Microsoft Azure (IaaS)
 
-Live System
+Live System:
 Website URL: https://www.paperbacks-and-pitstops.com
 Server IP Address: 20.248.241.196
 Cloud Provider: Microsoft Azure
