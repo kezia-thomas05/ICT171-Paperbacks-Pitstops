@@ -1,8 +1,11 @@
 ICT171 Cloud Server Project — Paperbacks & Pitstops
 
 Student Name: Kezia Mariam Thomas
+
 Student Number: 35117059
+
 Unit: ICT171 – Introduction to Server Environments and Architectures
+
 Project: Cloud-hosted web server using Microsoft Azure (IaaS)
 
 Live System:
