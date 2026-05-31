@@ -88,6 +88,7 @@ SSL certificate is automatically managed and renewed by Certbot.
     - Nginx service status
     - Execution:
       - bash Documentation/system-status.sh
+- This monitoring script executed using Bash ensures compatibility and proper interpretation of commands.
 
 # SSL/TLS Configuration
 - SSL provided by Let’s Encrypt (Certbot)
